@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    #root{
+        @apply m-0 p-0 py-10 md:p-10 md:m-auto;
+    }
+    .wordle-grid-default{
+        @apply w-16 h-16 border-slate-300 border-2 flex items-center justify-center mx-auto text-4xl text-black font-bold;
+    }
+    .keyboard-default{
+        @apply w-8 h-10 md:w-12 md:h-16 bg-slate-200 rounded flex items-center justify-center mx-auto text-lg md:text-2xl font-bold  hover:bg-slate-500 cursor-pointer;
+    }
+    .keyboard-enter-del{
+        @apply w-10 h-10 md:w-20 md:h-16  bg-slate-200 rounded flex items-center justify-center mx-auto text-lg md:text-2xl font-bold hover:bg-slate-500 cursor-pointer;
+    }
+}
